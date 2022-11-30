@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Galeria</h1>
+
+    <img src="../media/img.jpg">
+
+
+    <script type="text/javascript" src="../js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+
+    <script>
+        $("img").mouseover(opaco);
+        function opaco() {
+            $("img").css("opacity", "0.5");
+            $("img").css("height", "400px");
+            $("img").css("width", "400px");
+        };
+        $("img").mouseleave(original);
+        function original() {
+            $("img").css("opacity", "");
+            $("img").css("height", "");
+            $("img").css("width", "");
+        };
+    </script>
+</body>
+
+</html>
